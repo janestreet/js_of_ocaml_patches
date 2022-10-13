@@ -1,0 +1,2 @@
+(library (name js_of_ocaml_patches) (public_name js_of_ocaml_patches)
+ (libraries js_of_ocaml) (preprocess (pps js_of_ocaml-ppx)))
