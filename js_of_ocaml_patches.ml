@@ -10,18 +10,4 @@ module Dom_html = struct
     method deltaZ : number t readonly_prop
     method deltaMode : int readonly_prop
   end
-
-  class type canvasRenderingContext2D = object
-    inherit Js_of_ocaml.Dom_html.canvasRenderingContext2D
-
-    method ellipse :
-      number t
-      -> number t
-      -> number t
-      -> number t
-      -> number t
-      -> number t
-      -> number t
-      -> unit meth
-  end
 end
