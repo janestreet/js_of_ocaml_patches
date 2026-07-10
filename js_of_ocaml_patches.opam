@@ -13,10 +13,13 @@ build: [
 depends: [
   "ocaml" {>= "5.1.0"}
   "dune"            {>= "3.17.0"}
-  "js_of_ocaml"     {= "6.0.1+ox"}
-  "js_of_ocaml-ppx" {= "6.0.1+ox"}
+  "js_of_ocaml"     {>= "6.0.0"}
+  "js_of_ocaml-ppx" {>= "6.0.0"}
 ]
 available: arch != "x86_32"
+conflicts: [
+  "oxcaml-compiler" {< "5.2.0minus39"}
+]
 synopsis: "Additions to js_of_ocaml's standard library that are required by Jane Street libraries."
 description: "
 Additions to js_of_ocaml's standard library that are required by Jane Street libraries. Most, if not everything in this library is intended to be upstreamed.
